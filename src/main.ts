@@ -91,6 +91,7 @@ const main = async (): Promise<void> => {
     chart = `${defaultRepo.name}/${defaultRepo.chart}`;
   }
 
+  console.log(`REPO (${repoName}): ${repoUrl}`);
   await helm.addRepo(repoName, repoUrl);
 
   const helmArgs = [
