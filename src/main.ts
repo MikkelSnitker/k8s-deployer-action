@@ -92,6 +92,7 @@ const main = async (): Promise<void> => {
   }
 
   console.log(`REPO (${repoName}): ${repoUrl}`);
+
   await helm.addRepo(repoName, repoUrl);
 
   const helmArgs = [
